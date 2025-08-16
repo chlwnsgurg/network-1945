@@ -1,0 +1,1 @@
+# Striker 1945 game package

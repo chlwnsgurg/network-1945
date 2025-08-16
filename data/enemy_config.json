@@ -1,0 +1,77 @@
+{
+  "scout": {
+    "health": 10,
+    "asset_key": "enemy_scout",
+    "movement": {
+      "type": "sine_wave",
+      "speed": 150,
+      "amplitude": 60,
+      "frequency": 2
+    },
+    "attack": {
+      "type": "none"
+    }
+  },
+  "fighter": {
+    "health": 30,
+    "asset_key": "enemy_fighter",
+    "movement": {
+      "type": "dive",
+      "speed": 120,
+      "dive_y": 150
+    },
+    "attack": {
+      "type": "single_shot_player",
+      "cooldown": 1.5,
+      "bullet_speed": 400
+    }
+  },
+  "gunship": {
+    "health": 50,
+    "asset_key": "enemy_gunship",
+    "movement": {
+      "type": "straight",
+      "speed": 80
+    },
+    "attack": {
+      "type": "spread_shot",
+      "cooldown": 2.0,
+      "bullet_count": 3,
+      "spread_angle": 20,
+      "bullet_speed": 300
+    }
+  },
+  "interceptor": {
+    "health": 20,
+    "asset_key": "enemy_interceptor", 
+    "movement": {
+      "type": "zigzag",
+      "speed": 140,
+      "zigzag_width": 120,
+      "zigzag_frequency": 3
+    },
+    "attack": {
+      "type": "burst_fire",
+      "cooldown": 3.0,
+      "burst_count": 3,
+      "burst_delay": 0.15,
+      "bullet_speed": 350
+    }
+  },
+  "bomber": {
+    "health": 80,
+    "asset_key": "enemy_bomber",
+    "movement": {
+      "type": "cosine_wave",
+      "speed": 60,
+      "amplitude": 40,
+      "frequency": 1
+    },
+    "attack": {
+      "type": "circular_shot",
+      "cooldown": 4.0,
+      "bullet_count": 8,
+      "bullet_speed": 250
+    }
+  }
+}

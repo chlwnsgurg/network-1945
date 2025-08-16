@@ -1,0 +1,134 @@
+{
+  "network_overlord": {
+    "health": 800,
+    "asset_key": "migamboss",
+    "scale_factor": 1.0,
+    "phases": 3,
+    "movement": {
+      "type": "boss_hover",
+      "speed": 60,
+      "amplitude": 100,
+      "frequency": 0.5
+    },
+    "attack_phases": [
+      {
+        "type": "spread_shot",
+        "bullet_speed": 180,
+        "fire_rate": 0.4,
+        "spread_angle": 15,
+        "bullet_count": 8
+      },
+      {
+        "type": "rapid_fire",
+        "bullet_speed": 250,
+        "fire_rate": 0.1,
+        "spread_angle": 5
+      },
+      {
+        "type": "barrage",
+        "bullet_speed": 200,
+        "fire_rate": 0.15,
+        "bullet_count": 12,
+        "spread_angle": 45
+      }
+    ]
+  },
+  "packet_storm": {
+    "health": 1200,
+    "asset_key": "boss",
+    "scale_factor": 3.0,
+    "phases": 4,
+    "movement": {
+      "type": "boss_hover",
+      "speed": 80,
+      "amplitude": 150,
+      "frequency": 0.7
+    },
+    "attack_phases": [
+      {
+        "type": "burst",
+        "bullet_speed": 150,
+        "fire_rate": 0.5,
+        "burst_count": 3
+      },
+      {
+        "type": "spiral",
+        "bullet_speed": 100,
+        "fire_rate": 0.3,
+        "bullet_count": 6
+      },
+      {
+        "type": "homing",
+        "bullet_speed": 120,
+        "fire_rate": 0.8,
+        "bullet_count": 4
+      },
+      {
+        "type": "chaos",
+        "bullet_speed": 180,
+        "fire_rate": 0.1,
+        "bullet_count": 20
+      }
+    ]
+  },
+  "cyber_fortress": {
+    "health": 1500,
+    "asset_key": "boss",
+    "scale_factor": 3.5,
+    "phases": 3,
+    "movement": {
+      "type": "boss_fortress",
+      "speed": 30
+    },
+    "attack_phases": [
+      {
+        "type": "laser_sweep",
+        "bullet_speed": 300,
+        "fire_rate": 2.0,
+        "sweep_angle": 60
+      },
+      {
+        "type": "missile_barrage",
+        "bullet_speed": 100,
+        "fire_rate": 0.3,
+        "bullet_count": 8,
+        "homing": true
+      },
+      {
+        "type": "final_desperate",
+        "bullet_speed": 250,
+        "fire_rate": 0.05,
+        "bullet_count": 30
+      }
+    ]
+  },
+  "basic": {
+    "health": 600,
+    "asset_key": "boss",
+    "scale_factor": 2.0,
+    "phases": 3,
+    "movement": {
+      "type": "boss_hover",
+      "speed": 50
+    },
+    "attack_phases": [
+      {
+        "type": "rapid_fire",
+        "bullet_speed": 160,
+        "fire_rate": 0.5
+      },
+      {
+        "type": "spiral",
+        "bullet_speed": 140,
+        "fire_rate": 0.3,
+        "bullet_count": 6
+      },
+      {
+        "type": "barrage",
+        "bullet_speed": 200,
+        "fire_rate": 0.2,
+        "bullet_count": 10
+      }
+    ]
+  }
+}
